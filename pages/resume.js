@@ -3,6 +3,8 @@
 // To use, ensure you have a Next.js project with Tailwind CSS setup.
 
 import React from 'react';
+import Link from 'next/link';
+
 
 // --- SVG Icon Components ---
 // Using inline SVGs is a good practice to avoid external dependencies and improve performance.
@@ -150,12 +152,15 @@ export default function ResumePage() {
 
 
       <main className="container mx-auto max-w-4xl p-4 sm:p-8">
-        <a href ="/" 
-       className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-1  border-none rounded-md "
+        <Link href ="/" 
+       
                  
       >
+        <span className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-1  border-none rounded-md " >
         Go To Home 
-      </a>
+
+        </span>
+      </Link>
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           
           {/* --- Header Section --- */}

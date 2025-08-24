@@ -19,8 +19,10 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 
-
 import Link from "next/link";
+
+
+// import Link from "next/link";
 // import ResumePage from "./resume";
 
 
@@ -51,12 +53,12 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a
+                <Link
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                   href="/resume"
                 >
                   Resume
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
